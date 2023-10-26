@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-elements {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.buttons button {
+  padding: 5px 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.transparent-button {
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 10px;
+}
+
+.transparent-button:hover,
+.transparent-button:active {
+  background-color: #0066A2;
+  color: white;
+}
+
+.blue-button {
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 10px;
+}
+
+.blue-button:hover,
+.blue-button:active {
+  background-color: #0066A2;
+  color: white;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-elements {
+  display: flex;
+  align-items: start;
+  padding: 80px 150px;
+}
+
+.footer-column {
+  width: 35%;
+}
+
+.footer-ilab {
+  width: 65%;
+  display: flex;
+  justify-content: end;
+  gap: 200px;
+}
+
+.serviceAbout {
+  display: flex;
+  gap: 200px;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer-service,
+.footer-about,
+.footer-follow {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.footer-about a,
+.footer-follow a {
+  color: black;
+  text-decoration: none;
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-ilab {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .serviceAbout,
+  .footer-elements {
+    flex-direction: column;
+  }
+}
